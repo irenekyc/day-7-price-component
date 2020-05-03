@@ -1,0 +1,14 @@
+@media (min-width:1024px){
+    .pricing{
+        &-container{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-card{
+            margin:0;
+            width:350px;
+        }
+    }
+  
+}

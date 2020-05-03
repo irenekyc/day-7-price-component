@@ -1,0 +1,22 @@
+@mixin PRICECARDSTYLE($child){
+    @if ($child == "even"){
+        background: linear-gradient(125deg, $primary-light, $primary);
+        color: white;
+        h1, p{
+            color:white;
+            border-bottom: 1px solid white;
+        }}
+        .btn-primary{
+            background: white;
+            color: $primary;
+            &:hover{
+                color:white;
+                border: 1px solid white;
+                background: transparent;
+            }
+        }
+    @media (min-width:1024px){
+        transform: scaleY(1.1)
+    }
+
+}

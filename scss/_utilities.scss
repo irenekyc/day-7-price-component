@@ -1,0 +1,61 @@
+//Layout
+
+@for $i from 1 through 10{
+    .py-#{$i}{ padding: 1rem*$i 0;}
+}
+
+@for $i from 1 through 10{
+    .my-#{$i}{ margin: 1rem*$i 0;}
+}
+
+@mixin ALIGNCENTER{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+//Text
+.x-large{
+    font-size:4rem;
+}
+
+.large{
+    font-size:3rem;
+}
+
+.secondary{
+    color: $main-light;
+    font-size:0.75rem;
+}
+
+.heading-text{
+    color: $main-dark;
+}
+
+.lead{
+    font-size:2rem;
+}
+.title{
+    font-size:1.2rem;
+}
+
+//BUTTON
+.btn{
+    cursor: pointer;
+    padding:1rem 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    &-primary{
+        background: linear-gradient(to right, $primary-light, $primary);
+        color: white;
+        &:hover{
+            background: transparent;
+            border: 1px solid $primary;
+            color: $primary;
+        }
+    }
+}
+
+@mixin BOXSHADOW{
+    box-shadow: 0 5px 10px $main-dark;
+}
